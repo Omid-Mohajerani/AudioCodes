@@ -26,6 +26,8 @@ Mediant SW> en
 Password: Admin
 ```
 
+![Audio Codes Network Configure](../screenshots/audiocodes-static-ip-configuration001.png.png)
+
 ### 2. Navigate to Network Configuration
 
 ```bash
@@ -91,6 +93,8 @@ exit
 Mediant SW# wr
 Writing configuration...done
 ```
+
+![Audio Codes Network Configure 02](../screenshots/audiocodes-static-ip-configuration002.png)
 
 ---
 
