@@ -26,7 +26,7 @@ Mediant SW> en
 Password: Admin
 ```
 
-![Audio Codes Network Configure](../screenshots/audiocodes-static-ip-configuration001.png.png)
+![Audio Codes Network Configure](../screenshots/audiocodes-static-ip-configuration001.png)
 
 ### 2. Navigate to Network Configuration
 
