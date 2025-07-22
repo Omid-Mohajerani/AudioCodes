@@ -4,7 +4,7 @@ This guide explains how to configure a static IP address on an AudioCodes Median
 
 ---
 
-## 🔐 Default Login Credentials
+##  Default Login Credentials
 
 To access the AudioCodes CLI:
 
@@ -17,7 +17,7 @@ When entering privileged EXEC mode with the `en` command, the password is also:
 
 ---
 
-## 🧭 Step-by-Step Configuration Guide
+##  Step-by-Step Configuration Guide
 
 ### 1. Enter Enable Mode
 
@@ -26,19 +26,13 @@ Mediant SW> en
 Password: Admin
 ```
 
-### 2. Enter Configuration Mode
+### 2. Navigate to Network Configuration
 
 ```bash
-Mediant SW# configure
+Mediant SW# configure network
 ```
 
-### 3. Navigate to Network Configuration
-
-```bash
-Mediant SW(configure)# network
-```
-
-### 4. Display the Existing Interface
+### 3. Display the Existing Interface
 
 ```bash
 Mediant SW(config-network)# interface network-if display
@@ -46,7 +40,7 @@ Mediant SW(config-network)# interface network-if display
 
 This shows current interface settings for interfaces like `network-if 0`.
 
-### 5. Enter the Network Interface Configuration Mode
+### 4. Enter the Network Interface Configuration Mode
 
 ```bash
 Mediant SW(config-network)# interface network-if 0
@@ -57,9 +51,9 @@ You’ll now be in the mode:
 
 ---
 
-## ⚙️ Set Static IP Configuration
+## Set Static IP Configuration
 
-### 6. Configure the IP Address and Related Parameters
+### 5. Configure the IP Address and Related Parameters
 
 ```bash
 ip-address 192.168.2.220
@@ -72,7 +66,7 @@ primary-dns 8.8.8.8
 
 ---
 
-### 7. Apply Changes
+### 6. Apply Changes
 
 ```bash
 activate
@@ -83,7 +77,7 @@ You should see:
 Done
 ```
 
-### 8. Exit Configuration Mode
+### 7. Exit Configuration Mode
 
 ```bash
 exit
@@ -91,7 +85,7 @@ exit
 
 ---
 
-## 💾 Save the Configuration
+##  Save the Configuration
 
 ```bash
 Mediant SW# wr
@@ -100,16 +94,6 @@ Writing configuration...done
 
 ---
 
-## 📌 Summary
-
-| Parameter     | Value            |
-|---------------|------------------|
-| IP Address    | `192.168.2.220`  |
-| Subnet Mask   | `255.255.255.0` (Prefix length 24) |
-| Gateway       | `192.168.2.1`    |
-| DNS Server    | `8.8.8.8`        |
-
----
 
 ## 🖥️ Additional Tips
 
@@ -121,7 +105,3 @@ Writing configuration...done
 
 ---
 
-## 📚 Resources
-
-- [AudioCodes CLI Guide (Official)](https://www.audiocodes.com/library/technical-documents)
-- [Network Interface CLI Reference](https://www.audiocodes.com/knowledge-center)
