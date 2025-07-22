@@ -1,4 +1,4 @@
-# 🛠️ How to Set a Static IP Address on AudioCodes Mediant via CLI
+#  How to Set a Static IP Address on AudioCodes Mediant via CLI
 
 This guide explains how to configure a static IP address on an AudioCodes Mediant device using its Command Line Interface (CLI). This is particularly useful if you're working in a headless or console-only environment.
 
